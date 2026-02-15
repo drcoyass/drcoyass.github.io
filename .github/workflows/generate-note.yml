@@ -1,0 +1,115 @@
+name: Generate note Article Draft
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 毎週月曜 09:00 JST (00:00 UTC)
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: '記事テーマ（空欄でランダム）'
+        required: false
+
+permissions:
+  issues: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate article draft
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CUSTOM_TOPIC: ${{ github.event.inputs.topic }}
+        run: |
+          # テーマリスト
+          TOPICS=(
+            "分割ポリリン酸ホワイトニングの最新エビデンスと臨床Tips"
+            "歯科医師が語るラップと歯科の共通点"
+            "審美歯科のケーススタディ：直接法コンポジットレジン修復"
+            "痛くない治療のための最新アプローチ"
+            "歯周病予防におけるポリリン酸の活用"
+            "歯科医院経営とブランディング"
+            "ラッパー歯科医のリアルな1日"
+            "保険診療と自費診療の賢い選び方"
+            "オーラルケア製品の正しい選び方：歯科医師の本音"
+            "音楽と医療：二足のわらじで学んだこと"
+            "E.P.Oの活動報告と歯科医の両立"
+            "デブパレード復活と40代の挑戦"
+            "歯学博士が教える本当のアンチエイジング"
+            "分割ポリリン酸による骨再生・歯周組織再生の可能性"
+            "中目黒で開業して分かったこと"
+          )
+
+          # テーマ選択
+          if [ -n "$CUSTOM_TOPIC" ]; then
+            TOPIC="$CUSTOM_TOPIC"
+          else
+            INDEX=$((RANDOM % ${#TOPICS[@]}))
+            TOPIC="${TOPICS[$INDEX]}"
+          fi
+
+          echo "Selected topic: $TOPIC"
+
+          # Claude APIで記事生成
+          RESPONSE=$(curl -s https://api.anthropic.com/v1/messages \
+            -H "content-type: application/json" \
+            -H "x-api-key: $ANTHROPIC_API_KEY" \
+            -H "anthropic-version: 2023-06-01" \
+            -d "$(cat <<PROMPT
+          {
+            "model": "claude-sonnet-4-5-20250929",
+            "max_tokens": 4000,
+            "messages": [
+              {
+                "role": "user",
+                "content": "あなたはDr.COYASS（小安正洋）です。歯科医師・歯学博士であり、ラッパーでもあります。中目黒コヤス歯科の院長で、分割ポリリン酸研究会の主宰者です。MIC BANDITZでavex、デブパレードでSonyから2度のメジャーデビュー経験があり、現在はE.P.O（w/ Bro.Hi from SOUL'd OUT）として活動中。\n\n以下のテーマでnote記事を書いてください：\n\n「${TOPIC}」\n\n条件：\n- 2000〜3000字程度\n- 専門的だが一般読者にもわかりやすく\n- Dr.COYASSらしいユーモアとラップ的な言い回しを適度に\n- 見出しにはマークダウンの##を使用\n- 最後に中目黒コヤス歯科のURLとnoteフォローの案内を入れる\n- 画像の指示は[画像：説明]の形式で\n\nマークダウン形式で記事本文のみ出力してください。"
+              }
+            ]
+          }
+          PROMPT
+          )")
+
+          # レスポンスからテキスト抽出
+          ARTICLE=$(echo "$RESPONSE" | python3 -c "
+          import sys, json
+          data = json.load(sys.stdin)
+          if 'content' in data:
+              for block in data['content']:
+                  if block['type'] == 'text':
+                      print(block['text'])
+          elif 'error' in data:
+              print('API Error: ' + data['error'].get('message', 'Unknown error'))
+          ")
+
+          # GitHub Issueとして投稿
+          DATE=$(date +%Y-%m-%d)
+          gh issue create \
+            --title "📝 [note下書き] ${TOPIC} (${DATE})" \
+            --body "$(cat <<EOF
+          ## note記事ドラフト
+
+          **テーマ:** ${TOPIC}
+          **生成日:** ${DATE}
+          **ステータス:** 📋 レビュー待ち
+
+          ---
+
+          ${ARTICLE}
+
+          ---
+
+          ### 投稿手順
+          1. 上記の記事内容を確認・編集
+          2. [note.com/coyass](https://note.com/coyass) にログイン
+          3. 「投稿」→ 記事内容をペースト
+          4. サムネイル画像を設定
+          5. ハッシュタグを追加（例: #歯科 #審美歯科 #ポリリン酸 #ラッパー歯科医）
+          6. 公開
+          7. このIssueをCloseする
+          EOF
+          )" \
+            --label "note-draft"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
