@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr.COYASS | ラッパー歯科医 - Rapper × Dentist × Ph.D.</title>
   <meta name="description" content="Dr.COYASS（COYASS）- 歯科医師・歯学博士にしてラッパー。MIC BANDITZ / E.P.O / DEV PARADE（デブパレード）MC。中目黒コヤス歯科院長。">
-  <meta name="keywords" content="Dr.COYASS,COYASS,ドクターコヤス,ラッパー歯科医,MIC BANDITZ,DEV PARADE,デブパレード,歯科医師,歯学博士,中目黒コヤス歯科,ラッパー,rapper,dentist">
+  <meta name="keywords" content="Dr.COYASS,COYASS,ドクターコヤス,ラッパー歯科医,MIC BANDITZ,DEV PARADE,デブパレード,歯科医師,歯学博士,中目黒コヤス歯科,ラッパー,rapper,dentist,審美歯科,分割ポリリン酸,ホワイトニング,インプラント">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://drcoyass.github.io/">
+  <link rel="canonical" href="https://drcoyass.com/">
   <!-- OGP: Facebook / LINE -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Dr.COYASS | ラッパー歯科医 - Rapper × Dentist × Ph.D.">
   <meta property="og:description" content="歯科医師・歯学博士にしてラッパー。MIC BANDITZ / DEV PARADE MC。中目黒コヤス歯科院長。">
-  <meta property="og:url" content="https://drcoyass.github.io/">
+  <meta property="og:url" content="https://drcoyass.com/">
   <meta property="og:site_name" content="Dr.COYASS Official">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:image" content="https://drcoyass.github.io/assets/hero.jpg">
+  <meta property="og:image" content="https://drcoyass.com/assets/hero.jpg">
   <!-- OGP: X (Twitter) Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dr.COYASS | ラッパー歯科医 - Rapper × Dentist × Ph.D.">
   <meta name="twitter:description" content="歯科医師・歯学博士にしてラッパー。MIC BANDITZ / DEV PARADE MC。中目黒コヤス歯科院長。">
-  <meta name="twitter:image" content="https://drcoyass.github.io/assets/hero.jpg">
+  <meta name="twitter:image" content="https://drcoyass.com/assets/hero.jpg">
   <meta name="twitter:site" content="@coyass">
   <!-- Structured Data: JSON-LD -->
   <script type="application/ld+json">
@@ -29,8 +29,8 @@
     "@type": "Person",
     "name": "COYASS",
     "alternateName": ["Dr.COYASS", "ドクターコヤス"],
-    "url": "https://drcoyass.github.io/",
-    "image": "https://drcoyass.github.io/assets/hero.jpg",
+    "url": "https://drcoyass.com/",
+    "image": "https://drcoyass.com/assets/hero.jpg",
     "jobTitle": ["歯科医師", "歯学博士", "ラッパー"],
     "description": "歯科医師・歯学博士にしてラッパー。MIC BANDITZ / E.P.O / DEV PARADEのMC。中目黒コヤス歯科院長。",
     "sameAs": [
@@ -44,6 +44,8 @@
     }
   }
   </script>
+  <!-- SEO/Performance: LCP Preload for Hero Background -->
+  <link rel="preload" as="image" href="assets/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/death-to-metal" rel="stylesheet">
@@ -255,11 +257,15 @@
       margin-top: 3rem;
       opacity: 0;
       animation: fadeUp 1s ease 1.1s forwards;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     .hero-cta a {
       display: inline-block;
-      padding: 1rem 3rem;
+      padding: 1rem 2.5rem;
       border: 1px solid var(--gold);
       color: var(--gold);
       text-decoration: none;
@@ -270,6 +276,8 @@
       transition: all 0.4s ease;
       position: relative;
       overflow: hidden;
+      background: rgba(10,10,15,0.4);
+      backdrop-filter: blur(5px);
     }
 
     .hero-cta a::before {
@@ -284,10 +292,25 @@
 
     .hero-cta a:hover {
       color: var(--dark);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(212,175,55,0.25);
     }
 
     .hero-cta a:hover::before {
       left: 0;
+    }
+
+    .hero-cta a.primary {
+      border: 1px solid var(--neon-blue);
+      color: var(--neon-blue);
+      box-shadow: 0 0 15px rgba(0,212,255,0.15);
+    }
+    .hero-cta a.primary::before {
+      background: var(--neon-blue);
+    }
+    .hero-cta a.primary:hover {
+      color: var(--dark);
+      box-shadow: 0 10px 25px rgba(0,212,255,0.4);
     }
 
     .scroll-indicator {
@@ -946,7 +969,8 @@
       </div>
       <p class="hero-subtitle">from E.P.O &bull; Nakameguro</p>
       <div class="hero-cta">
-        <a href="#identity">Explore</a>
+        <a href="#social-feed" class="primary">Latest Feed</a>
+        <a href="#identity">Explore Base</a>
       </div>
     </div>
     <div class="scroll-indicator">
