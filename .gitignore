@@ -1,0 +1,27 @@
+# Sensitive files
+.env
+*_auth.json
+*_state.json
+*.pma
+
+# OS files
+.DS_Store
+
+# Temporary / Log files
+error_*.png
+*.log
+playwright_crashpad/
+playwright_downloads/
+playwright_tmp/
+.playwright/
+fb_browser_data/
+replied_logs.json
+replied_threads_users.json
+
+# Local scripts (Optional: if they want to keep scripts local only)
+# *.py
+
+# Specific data files that shouldn't be public
+latest_thread_draft.txt
+latest_dental_papers.json
+集めた論文/
