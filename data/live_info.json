@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-05-09",
+    "day": "SAT",
+    "time": "12:15 - 12:40",
+    "title": "FORTY DEGREES JAPAN",
+    "artist": "Devparade",
+    "venue": "国立代々木競技場 第一体育館",
+    "tickets": "https://40degreesjapan.com",
+    "status": "UPCOMING"
+  },
+  {
+    "date": "2026-06-14",
+    "day": "SUN",
+    "time": "TBA",
+    "title": "1st Full Album「全ての武器をお箸に」レコ発ライブ",
+    "artist": "Devparade",
+    "venue": "渋谷 CYCLONE",
+    "tickets": "http://cyclone1997.com",
+    "status": "UPCOMING"
+  },
+  {
     "date": "2026-07-12",
     "day": "SUN",
     "time": "OPEN 18:30 / START 19:00",

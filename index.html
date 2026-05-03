@@ -609,8 +609,9 @@
 
     .live-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
+      align-items: stretch;
     }
 
     .live-card {
@@ -1068,6 +1069,21 @@
       .bio-content { grid-template-columns: 1fr; }
       .bio-stats { grid-template-columns: 1fr 1fr; }
       .disc-grid { grid-template-columns: 1fr; }
+      .live-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .live-card { padding: 1.5rem; }
+      .live-card::before { font-size: 3.5rem; top: -5px; right: -5px; }
+      
+      /* Seminar section mobile fix */
+      #seminar .disc-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+      #seminar .disc-card { padding: 1.2rem; }
+      
+      .hero-live-badge { 
+        position: relative; 
+        bottom: auto; right: auto; 
+        margin-top: 2rem; 
+        width: fit-content; 
+        margin-left: auto; margin-right: auto;
+      }
 
       section { padding: 4rem 1.5rem; }
     }
