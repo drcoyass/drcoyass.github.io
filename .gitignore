@@ -18,8 +18,8 @@ fb_browser_data/
 replied_logs.json
 replied_threads_users.json
 
-# Local scripts (Optional: if they want to keep scripts local only)
-# *.py
+# Local scripts
+*.py
 
 # Specific data files that shouldn't be public
 latest_thread_draft.txt
