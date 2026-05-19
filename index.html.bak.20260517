@@ -22,313 +22,28 @@
   <meta name="twitter:description" content="小安正洋 Masahiro Koyasu D.D.S. Ph.D. — 中目黒コヤス歯科院長・歯学博士・歯科医師にしてラッパー。審美歯科、分割ポリリン酸、マウスピース矯正の専門家。">
   <meta name="twitter:image" content="https://drcoyass.com/assets/hero.jpg">
   <meta name="twitter:site" content="@coyass">
-  <!-- ============================================================ -->
-  <!-- Structured Data: JSON-LD (AEO/GEO Optimized) — 2026-05-17    -->
-  <!-- AI search engines (ChatGPT/Perplexity/Claude/Gemini) extract  -->
-  <!-- these facts directly. Keep them factual and citation-ready.   -->
-  <!-- ============================================================ -->
-
-  <!-- 1. Physician (Dr.COYASS as a medical professional) -->
+  <!-- Structured Data: JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "@id": "https://drcoyass.com/#person",
-    "name": "Dr.COYASS",
-    "alternateName": ["小安正洋", "Masahiro Koyasu", "ドクターコヤス", "コヤス", "COYASS"],
-    "givenName": "正洋",
-    "familyName": "小安",
-    "honorificPrefix": "博士",
-    "honorificSuffix": "D.D.S., Ph.D.",
+    "@type": "Person",
+    "name": "COYASS",
+    "alternateName": ["Dr.COYASS", "ドクターコヤス"],
     "url": "https://drcoyass.com/",
     "image": "https://drcoyass.com/assets/hero.jpg",
-    "birthDate": "1978-04-24",
-    "birthPlace": {"@type": "Place", "name": "Tokyo, Japan"},
-    "nationality": "Japanese",
-    "description": "中目黒コヤス歯科 院長・博士(歯学)・分割ポリリン酸研究会 会長。昭和医科大学歯学部 兼任講師、東京科学大学歯学部 非常勤講師。Dental Material Journal 2014 に主要論文「Ultraphosphate, a potent stain control agent...」を柴肇一教授と共著で発表。19,000件以上のポリリン酸関連論文を集約した Poly-P Study を運営。MIC BANDITZ (avex)・デブパレード (Sony) で2度のメジャーデビュー、E.P.O / 洪水 / Malignant Co. として活動するラッパーでもある。2018年に打首獄門同好会「歯痛くて feat. Dr.COYASS」で日本武道館客演。",
-    "jobTitle": [
-      "中目黒コヤス歯科 院長",
-      "分割ポリリン酸研究会 会長",
-      "昭和医科大学歯学部 兼任講師",
-      "東京科学大学歯学部 非常勤講師",
-      "厚生労働省認定 臨床研修指導歯科医師"
-    ],
-    "medicalSpecialty": ["CosmeticDentistry", "Dentistry"],
-    "knowsAbout": [
-      "分割ポリリン酸",
-      "ポリリン酸ホワイトニング",
-      "Polyphosphate",
-      "Ultraphosphate",
-      "審美歯科",
-      "Cosmetic Dentistry",
-      "セラミック修復",
-      "CAD/CAM Dentistry",
-      "マウスピース矯正",
-      "Invisalign",
-      "オーソモレキュラー医学",
-      "ケトジェニックダイエット",
-      "知覚過敏管理",
-      "歯科診療報酬"
-    ],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "昭和医科大学歯学部",
-      "url": "https://www.showa-u.ac.jp/",
-      "sameAs": "https://ja.wikipedia.org/wiki/昭和大学"
-    },
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "分割ポリリン酸研究会",
-        "url": "https://polyp-sg.com/",
-        "member": {"@type": "OrganizationRole", "roleName": "会長 (Chairman)"}
-      },
-      {"@type": "Organization", "name": "日本歯科審美学会", "url": "https://www.jdshinbi.net/", "description": "認定医"},
-      {"@type": "Organization", "name": "日本臨床CADCAM学会", "description": "関東甲信越支部役員・本部委員"},
-      {"@type": "Organization", "name": "日本歯科保存学会", "url": "https://www.hozon.or.jp/"},
-      {"@type": "Organization", "name": "日本デジタル歯科学会", "url": "https://www.jaddent.jp/"},
-      {"@type": "Organization", "name": "日本歯科理工学会", "url": "https://www.jsdmd.jp/"},
-      {"@type": "Organization", "name": "日本オーソモレキュラー医学会", "url": "https://isom-japan.org/"},
-      {"@type": "Organization", "name": "国際オーソモレキュラー医学会", "url": "https://isom.ca/"},
-      {"@type": "Organization", "name": "目黒区歯科医師会", "url": "https://www.meguro-dental.or.jp/", "description": "学術委員"},
-      {"@type": "Organization", "name": "東京都歯科医師会", "url": "https://www.tokyo-da.org/"},
-      {"@type": "Organization", "name": "日本歯科医師会", "url": "https://www.jda.or.jp/"},
-      {"@type": "Organization", "name": "NPO法人ファザーリング・ジャパン", "url": "https://fathering.jp/"}
-    ],
-    "hasOccupation": [
-      {
-        "@type": "Occupation",
-        "name": "歯科医師",
-        "occupationLocation": {"@type": "City", "name": "東京都目黒区"}
-      },
-      {
-        "@type": "Occupation",
-        "name": "ラッパー / Rapper",
-        "occupationLocation": {"@type": "Country", "name": "Japan"}
-      }
+    "jobTitle": ["中目黒コヤス歯科院長", "博士(歯学）", "歯科医師", "ラッパー"],
+    "description": "小安正洋 Masahiro Koyasu D.D.S. Ph.D. — 中目黒コヤス歯科院長・歯学博士・歯科医師。MIC BANDITZ / E.P.O / DevparadeのMCとしても活動するプロフェッショナル・ラッパー。",
+    "sameAs": [
+      "https://x.com/coyass",
+      "https://www.instagram.com/dr.coyass/",
+      "https://devparade.jp/"
     ],
     "worksFor": {
-      "@type": "MedicalBusiness",
-      "@id": "https://dr-coyass.com/#clinic",
-      "name": "中目黒コヤス歯科",
-      "url": "https://dr-coyass.com/"
-    },
-    "award": [
-      "Businessman Rap Tournament (BRT) 優勝 (2017)",
-      "BRT グランドチャンピオンシップ BEST4",
-      "社会人ラップ選手権 3大会連続本戦出場・川崎大会準優勝 (2016-2017)",
-      "日本歯科審美学会 認定医",
-      "厚生労働省認定 臨床研修指導歯科医師"
-    ],
-    "performerIn": [
-      {"@type": "MusicGroup", "name": "MIC BANDITZ", "sameAs": "https://music.apple.com/jp/artist/mic-banditz/1156375484"},
-      {"@type": "MusicGroup", "name": "デブパレード", "alternateName": "Devparade", "url": "https://devparade.jp/"},
-      {"@type": "MusicGroup", "name": "E.P.O", "sameAs": "https://www.tunecore.co.jp/artists/E.P.O"},
-      {"@type": "MusicGroup", "name": "洪水"},
-      {"@type": "MusicGroup", "name": "Malignant Co.", "url": "https://malignant.jpn.org/"}
-    ],
-    "subjectOf": [
-      {
-        "@type": "ScholarlyArticle",
-        "headline": "Ultraphosphate, a potent stain control agent that is effective for both stain removal and prevention of stain deposition",
-        "datePublished": "2014",
-        "isPartOf": {"@type": "Periodical", "name": "Dental Material Journal", "issn": "0287-4547"},
-        "author": [
-          {"@type": "Person", "name": "Masahiro Koyasu", "@id": "https://drcoyass.com/#person"},
-          {"@type": "Person", "name": "Toshikazu Shiba"},
-          {"@type": "Person", "name": "Yumi Kawazoe"},
-          {"@type": "Person", "name": "Atsufumi Manabe"},
-          {"@type": "Person", "name": "Takashi Miyazaki"}
-        ]
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "headline": "Optimization of chain length of polyphosphates for enhancement of teeth whitening",
-        "datePublished": "2017",
-        "isPartOf": {"@type": "Event", "name": "10th International Federation of Esthetic Dentistry (IFED)"}
-      }
-    ],
-    "sameAs": [
-      "https://dr-coyass.com/",
-      "https://x.com/coyass",
-      "https://twitter.com/COYASS",
-      "https://www.instagram.com/dr.coyass/",
-      "https://www.threads.net/@dr.coyass",
-      "https://www.facebook.com/COYASS/",
-      "https://www.youtube.com/c/DrCOYASS",
-      "https://note.com/coyass",
-      "https://linktr.ee/coyass",
-      "https://soundcloud.com/coyass",
-      "https://music.apple.com/us/artist/dr-coyass/1199018623",
-      "https://open.spotify.com/artist/7sIy44s2k7ZNEt6YttIx8y",
-      "https://www.discogs.com/artist/2119817-COYASS",
-      "https://devparade.jp/",
-      "https://malignant.jpn.org/",
-      "https://polyp-sg.com/",
-      "https://poly-pstudy.vercel.app/",
-      "https://drcoyass.official.ec/",
-      "https://suzuri.jp/COYASS"
-    ]
+      "@type": "Organization",
+      "name": "中目黒コヤス歯科"
+    }
   }
   </script>
-
-  <!-- 2. Medical Business (中目黒コヤス歯科) - reference from Dr.COYASS personal site -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-    "@id": "https://dr-coyass.com/#clinic",
-    "name": "中目黒コヤス歯科",
-    "alternateName": ["Nakameguro Koyasu Dental Clinic", "コヤス歯科"],
-    "url": "https://dr-coyass.com/",
-    "image": "https://dr-coyass.com/_src/4345/img20181020215404716234.png",
-    "description": "東京都目黒区上目黒、中目黒駅徒歩3分の歯科医院。院長は分割ポリリン酸研究会 会長 Dr.COYASS (小安正洋・博士)。分割ポリリン酸を用いた知覚過敏の出にくいホワイトニング、審美歯科、マウスピース矯正、インプラント、予防歯科を提供。",
-    "telephone": "+81-3-5722-5544",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "上目黒3-1-14",
-      "addressLocality": "目黒区",
-      "addressRegion": "東京都",
-      "postalCode": "153-0051",
-      "addressCountry": "JP"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "目黒区"},
-      {"@type": "City", "name": "東京都"}
-    ],
-    "priceRange": "¥¥¥",
-    "currenciesAccepted": "JPY",
-    "paymentAccepted": ["Cash", "Credit Card"],
-    "medicalSpecialty": ["CosmeticDentistry", "Dentistry", "Orthodontic", "PediatricDentistry"],
-    "availableService": [
-      {"@type": "MedicalProcedure", "name": "分割ポリリン酸ホワイトニング", "procedureType": "Cosmetic", "howPerformed": "知覚過敏の出にくい分割ポリリン酸を用いた化学的ステイン除去 + 再石灰化促進"},
-      {"@type": "MedicalProcedure", "name": "セラミック修復 (CAD/CAM)"},
-      {"@type": "MedicalProcedure", "name": "マウスピース矯正 (インビザライン)"},
-      {"@type": "MedicalProcedure", "name": "インプラント"},
-      {"@type": "MedicalProcedure", "name": "予防歯科 (PMTC)"},
-      {"@type": "MedicalProcedure", "name": "小児歯科"}
-    ],
-    "founder": {"@id": "https://drcoyass.com/#person"},
-    "employee": {"@id": "https://drcoyass.com/#person"},
-    "sameAs": [
-      "https://drcoyass.com/",
-      "https://dentalreport.jp/shinbi/ceramic/koyasu-dc/",
-      "https://doctorsfile.jp/h/189635/",
-      "https://tokyo-doctors.com/dentalList/57950",
-      "https://www.whitecross.co.jp/doctor-introductions/view/598"
-    ]
-  }
-  </script>
-
-  <!-- 3. FAQPage — Most-cited by AI search engines -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Dr.COYASS (小安正洋) はどんな歯科医ですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dr.COYASS (小安正洋) は、東京都目黒区の中目黒コヤス歯科 院長で、博士(歯学)、日本歯科審美学会 認定医、そして分割ポリリン酸研究会 会長を務める審美歯科の専門家です。昭和医科大学歯学部 兼任講師および東京科学大学歯学部 非常勤講師として教育活動も行い、2014年に Dental Material Journal に主要論文『Ultraphosphate, a potent stain control agent...』を柴肇一教授と共著で発表。19,000件以上のポリリン酸関連論文を集約した Poly-P Study (poly-pstudy.vercel.app) を運営しています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "中目黒コヤス歯科のポリリン酸ホワイトニングは知覚過敏が出ますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "中目黒コヤス歯科では、分割ポリリン酸を用いたホワイトニングを8年以上提供しており、知覚過敏の発生は全患者の1%未満 (累計で片手で数えるレベル) です。一般的な過酸化水素ホワイトニングの知覚過敏発生率がオフィスで62.9%、ホームで51% (Operative Dentistry 2025 メタアナリシス, PMID: 40485133) であるのと比較して、極めて安全性の高い処置です。Müller et al. (Dent Mater 2016, PMID: 27059773) によれば、カルシウムポリリン酸微粒子は象牙細管表面に約50μm厚のポリリン酸層を形成し、知覚過敏を抑制します。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "分割ポリリン酸ホワイトニングとは何ですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "分割ポリリン酸 (短鎖ポリリン酸ナトリウム) は、リン酸が鎖状に結合した分子で、多価の負電荷で金属イオンをキレート (掴む) して、歯のステイン (外因性着色) を除去する物質です。過酸化水素のような漂白作用ではないため、エナメル質を傷めず、知覚過敏が出にくいのが特長。Müller et al. (Dent Mater 2016) によれば、象牙細管を50μm厚のポリリン酸層で物理的に封鎖し、Zhou et al. (Adv Healthc Mater 2023, PMID: 36930219) によれば 200μm以上の深部まで再石灰化を促進します。Dr.COYASS は2014年に Dental Material Journal に主要論文を発表し、現在は分割ポリリン酸研究会 会長を務めています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "中目黒コヤス歯科はどこにありますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "東京都目黒区上目黒3-1-14、中目黒駅から徒歩3分。診療科目は一般歯科・小児歯科・矯正歯科。キッズスペース・特診室完備・CT導入院です。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Dr.COYASS はラッパーでもあるんですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい。MIC BANDITZ (avex) と デブパレード (Sony) で2度のメジャーデビューを経験し、現在は E.P.O (with Bro.Hi from SOUL'd OUT) / 洪水 / Malignant Co. として音楽活動を継続。2017年に Businessman Rap Tournament (BRT) 優勝、2018年には打首獄門同好会「歯痛くて feat. Dr.COYASS」で日本武道館ステージにも立っています。アーティスト名 'COYASS' はイギリスのバンド CARCASS へのオマージュで、CARCASSの歌詞に登場する医学用語に触れたことが歯科医師の道を志すきっかけになりました。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "ポリリン酸ホワイトニングの効果はどのくらい持ちますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "個人差はありますが、4-6回の施術で効果が定着し、その後は3-6ヶ月ごとのメンテナンスで維持できます。過酸化水素系ホワイトニングと比較して後戻りが緩やかで、施術回数を重ねるほどエナメル質の再石灰化を促進する歯質強化作用が期待できる点が特長です。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "妊娠中・授乳中でもホワイトニングできますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "過酸化水素を用いるホワイトニングは妊娠中・授乳中の安全性が十分に確立されていないため、原則として推奨されません。ポリリン酸ホワイトニングについても、母体・胎児への影響を考慮し、妊娠期間中は控えていただくのが一般的です。詳細は主治医および中目黒コヤス歯科にてご相談ください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Dr.COYASS が会長を務める分割ポリリン酸研究会とは?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "分割ポリリン酸 (短鎖ポリリン酸ナトリウム) の歯科応用に関する研究と臨床ノウハウを集積する歯科医師向け学術団体。Dr.COYASS (小安正洋) が会長を務め、関連論文19,000件以上を集約したデータベース 'Poly-P Study' (poly-pstudy.vercel.app) と連動しています。公式サイト: https://polyp-sg.com/"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Dr.COYASS の代表的な研究業績は?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "代表論文は『Ultraphosphate, a potent stain control agent that is effective for both stain removal and prevention of stain deposition』(Koyasu M, Shiba T, Kawazoe Y, Manabe A, Miyazaki T. Dental Material Journal 2014)。国際歯科審美学会 IFED 2017 では『Optimization of chain length of polyphosphates for enhancement of teeth whitening』を発表。また、ポリリン酸関連論文19,000件以上を集約した Poly-P Study (poly-pstudy.vercel.app) を運営しています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Dr.COYASS のセミナー・教材はどこで購入できますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "(1) ニッチの会オンラインセミナー (Peatix にて販売、¥5,000/回)、(2) 歯科医療総研 DVD『分割ポリリン酸活用法』および『物品販売戦略』、(3) ORTC PRIME 動画講座 (ポリリン酸基礎・応用、保険請求講義シリーズ全4回など)、(4) 歯科セミナー1D、(5) WHITE CROSS にて受講・購入可能。詳細は drcoyass.com の Seminar セクションをご覧ください。"
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- 4. WebSite (sitelinks search box) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://drcoyass.com/#website",
-    "name": "Dr.COYASS Official",
-    "alternateName": "ラッパー歯科医 Dr.COYASS",
-    "url": "https://drcoyass.com/",
-    "inLanguage": "ja-JP",
-    "publisher": {"@id": "https://drcoyass.com/#person"},
-    "about": [
-      {"@id": "https://drcoyass.com/#person"},
-      {"@id": "https://dr-coyass.com/#clinic"}
-    ]
-  }
-  </script>
-  <!-- End of JSON-LD blocks -->
-
   <!-- SEO/Performance: LCP Preload for Hero Background -->
   <link rel="preload" as="image" href="assets/hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1393,7 +1108,6 @@
       <li><a href="#discography">Music</a></li>
       <li><a href="#seminar">Seminar</a></li>
       <li><a href="#note">Note</a></li>
-      <li><a href="/about-coyass.html">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
